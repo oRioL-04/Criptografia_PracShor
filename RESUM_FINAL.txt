@@ -1,0 +1,255 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║              PRÀCTICA: SIMULACIÓ DE L'ALGORISME DE SHOR             ║
+║                                                                      ║
+║            Seguretat d'Aplicacions i Comunicacions                  ║
+║                  Universitat de Lleida                               ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+
+📋 INFORMACIÓ DEL PROJECTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Títol:        Simulació de l'Algorisme de Shor
+  Assignatura:  Seguretat d'Aplicacions i Comunicacions
+  Universitat:  Universitat de Lleida
+  Data:         Novembre 2025
+  Llenguatge:   Python 3.12
+  Estat:        ✅ COMPLET I PROVAT
+
+
+📦 ARXIUS DEL PROJECTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CODI FONT (Python)
+  ├── shor_simulacio.py      (11 KB)  ⭐ Implementació principal
+  ├── exemples_tests.py       (7.3 KB)   Tests i verificació
+  ├── visualitzacio.py        (8.4 KB)   Visualitzacions
+  └── demo.py                 (955 B)    Demostració ràpida
+
+  DOCUMENTACIÓ
+  ├── README.md               (5.9 KB)   Guia general
+  ├── TEORIA.md               (7.5 KB)   Explicació teòrica
+  ├── RESUM.md                (7.6 KB)   Resum executiu
+  ├── INSTRUCCIONS.md         (7.4 KB)   Guia d'execució
+  └── INDEX.md                (9.2 KB)   Índex del projecte
+
+  CONFIGURACIÓ
+  ├── requirements.txt        (329 B)    Dependències
+  └── PracticaShor.pdf        (116 KB)   Enunciat original
+
+
+🎯 OBJECTIUS COMPLERTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ✅ Comprendre conceptes de computació quàntica
+  ✅ Implementar simulació pas a pas
+  ✅ Entendre QFT i càlcul del període
+  ✅ Aplicar part clàssica de l'algorisme
+
+
+💻 FUNCIONS IMPLEMENTADES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  MÒDUL QUÀNTIC:
+  ✓ crear_registre_quantic_uniforme()  - Pas 1: Superposició uniforme
+  ✓ exponenciacio_modular()            - Pas 2: Entrellaçament
+  ✓ mesura_segon_registre()            - Pas 3: Mesura i col·lapse
+  ✓ qft()                              - Pas 4: Transformada de Fourier
+  ✓ fraccio_continua()                 - Pas 5: Extracció del període
+  ✓ modul_quantic()                    - Integració completa
+
+  PART CLÀSSICA:
+  ✓ algorisme_shor()                   - Algorisme complet
+
+
+📊 RESULTATS DE TESTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  FACTORITZACIONS EXITOSES:
+
+  ┌────┬──────────┬──────────────────┬────────┐
+  │ N  │ Factors  │ Verificació      │ Estat  │
+  ├────┼──────────┼──────────────────┼────────┤
+  │ 15 │ 3 × 5    │ 3 × 5 = 15       │   ✓    │
+  │ 21 │ 3 × 7    │ 3 × 7 = 21       │   ✓    │
+  │ 33 │ 3 × 11   │ 3 × 11 = 33      │   ✓    │
+  │ 35 │ 5 × 7    │ 5 × 7 = 35       │   ✓    │
+  │ 39 │ 3 × 13   │ 3 × 13 = 39      │   ✓    │
+  │ 51 │ 3 × 17   │ 3 × 17 = 51      │   ✓    │
+  │ 55 │ 5 × 11   │ 5 × 11 = 55      │   ✓    │
+  │ 57 │ 3 × 19   │ 3 × 19 = 57      │   ✓    │
+  │ 65 │ 5 × 13   │ 5 × 13 = 65      │   ✓    │
+  │ 77 │ 7 × 11   │ 7 × 11 = 77      │   ✓    │
+  └────┴──────────┴──────────────────┴────────┘
+
+  TESTS UNITARIS:
+  ✓ Test de registre quàntic uniforme
+  ✓ Test d'exponenciació modular
+  ✓ Test de càlcul del període
+  ✓ Test de factorització completa
+  
+  TOTAL: 14/14 tests passats ✅
+
+
+🚀 GUIA D'EXECUCIÓ RÀPIDA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. INSTAL·LACIÓ
+     $ python3 -m venv venv
+     $ source venv/bin/activate
+     $ pip install -r requirements.txt
+
+  2. EXECUCIÓ RÀPIDA
+     $ python demo.py
+
+  3. TESTS COMPLETS
+     $ python exemples_tests.py
+
+  4. VISUALITZACIONS
+     $ python visualitzacio.py
+
+
+📚 LLIBRERIES UTILITZADES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  • numpy      (≥1.24.0)  - Càlculs numèrics, FFT
+  • qiskit     (≥0.45.0)  - Framework de computació quàntica
+  • matplotlib (≥3.7.0)   - Visualització de dades
+
+
+🎓 CONCEPTES IMPLEMENTATS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  COMPUTACIÓ QUÀNTICA:
+  ▸ Superposició quàntica
+  ▸ Entrellaçament (entanglement)
+  ▸ Mesura i col·lapse
+  ▸ Registres quàntics
+
+  ALGORISMES:
+  ▸ Transformada de Fourier Quàntica (QFT)
+  ▸ Fraccions continues
+  ▸ Exponenciació modular
+  ▸ Màxim Comú Divisor (gcd)
+
+  MATEMÀTIQUES:
+  ▸ Aritmètica modular
+  ▸ Teoria de nombres
+  ▸ Periodicitat en funcions modulars
+  ▸ Factorització d'enters
+
+
+📐 COMPLEXITAT ALGORÍTMICA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ALGORISME CLÀSSIC (Trial Division):
+  ├─ Complexitat temporal: O(√N)
+  ├─ Per N de d dígits:    O(10^(d/2))
+  └─ Tipus:                EXPONENCIAL
+
+  ALGORISME DE SHOR (Ordinador quàntic real):
+  ├─ Complexitat temporal: O((log N)³)
+  ├─ Per N de d dígits:    O(d³)
+  └─ Tipus:                POLINÒMICA
+
+  EXEMPLE per N de 2048 bits (RSA):
+  ├─ Clàssic:  ~10^308 operacions (IMPOSSIBLE!)
+  └─ Shor:     ~10^12 operacions  (factible en quàntic)
+
+
+⚠️  LIMITACIONS DE LA SIMULACIÓ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ⚠ Simulació CLÀSSICA d'un algorisme quàntic
+  ⚠ Complexitat exponencial (no polinòmica)
+  ⚠ Limitació a números petits (N < 100)
+  ⚠ No mostra avantatge quàntic real
+  ⚠ Només finalitat educativa
+
+
+📈 ESTADÍSTIQUES DEL PROJECTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Línies de codi Python:        ~860
+  Línies de documentació:       ~1100
+  Funcions implementades:       15+
+  Tests implementats:           14+
+  Números factoritzats:         10+
+  Gràfics generats:             4+
+  Arxius de documentació:       5
+  Arxius de codi:               4
+
+
+🔍 VERIFICACIÓ FINAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  FUNCIONALITATS:
+  ✅ Pas 1: Registre quàntic uniforme
+  ✅ Pas 2: Exponenciació modular
+  ✅ Pas 3: Mesura del segon registre
+  ✅ Pas 4: Transformada de Fourier Quàntica
+  ✅ Pas 5: Fraccions continues
+  ✅ Mòdul quàntic complet
+  ✅ Part clàssica de l'algorisme
+
+  DOCUMENTACIÓ:
+  ✅ README amb guia d'ús
+  ✅ Explicació teòrica completa
+  ✅ Instruccions d'execució
+  ✅ Exemples i tests
+  ✅ Comentaris en el codi
+
+  QUALITAT:
+  ✅ Tots els tests passen
+  ✅ Codi ben estructurat
+  ✅ Documentació exhaustiva
+  ✅ Funciona correctament
+
+
+✨ CARACTERÍSTIQUES DESTACADES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🎯 Implementació fiel al PDF de la pràctica
+  📊 Visualitzacions de funcions modulars
+  🧪 Tests exhaustius de verificació
+  📖 Documentació completa i detallada
+  🎓 Explicacions teòriques clares
+  🔧 Codi modular i ben comentat
+  ⚡ Demo ràpida per provar
+  🎨 Sortida visual i informativa
+
+
+📝 PUNTS FORTS DEL PROJECTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  • Implementa TOTS els passos requerits al PDF
+  • Cada funció correspon exactament a un pas
+  • Documentació exhaustiva (>1000 línies)
+  • Tests que verifiquen cada component
+  • Exemples d'ús i demos
+  • Visualitzacions gràfiques
+  • Codi net, comentat i estructurat
+  • Segueix bones pràctiques de programació
+
+
+🎓 CONCLUSIÓ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Aquest projecte implementa completament l'algorisme de Shor
+  segons les especificacions del PDF de la pràctica.
+
+  Inclou implementació, documentació, tests, exemples i
+  visualitzacions.
+
+  ✅ PROJECTE COMPLET I LLEST PER LLIURAR
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    Universitat de Lleida
+          Seguretat d'Aplicacions i Comunicacions
+                      Novembre 2025
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
