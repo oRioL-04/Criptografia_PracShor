@@ -158,19 +158,12 @@ def main():
 - Permet extreure el període r de la fase mesurada després de la QFT
 - Aproximació: k/2^m ≈ k'/r on r és el període buscat
 
-## Limitacions de la Simulació
-
-⚠️ **Nota Important:** Aquesta és una simulació clàssica d'un algorisme quàntic real.
-
-- Els ordinadors quàntics reals utilitzarien la superposició i l'entrellaçament quàntic
-- La simulació utilitza arrays i probabilitats per representar estats quàntics
-- La complexitat temporal és exponencial en la simulació, però seria polinòmica en un ordinador quàntic real
 
 ## Llibreries Utilitzades
 
 - **numpy:** Càlculs numèrics i arrays
 - **qiskit:** Framework de computació quàntica (IBM)
-- **matplotlib:** Visualització (opcional)
+- **matplotlib:** Visualització
 
 ## Referències
 
@@ -178,11 +171,3 @@ def main():
 2. Nielsen, M. A., & Chuang, I. L. (2010). "Quantum Computation and Quantum Information"
 3. Qiskit Documentation: https://qiskit.org/
 
-## Autor
-
-Pràctica realitzada per a l'assignatura de Seguretat d'Aplicacions i Comunicacions  
-Universitat de Lleida
-
----
-
-**Data:** Novembre 2025
