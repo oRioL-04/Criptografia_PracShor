@@ -165,7 +165,7 @@ Tots els tests passen correctament i les factoritzacions són vàlides.
 ## Limitacions i Notes
 
 ### Limitacions de la Simulació
-⚠️ **Simulació clàssica**: Aquest codi simula un algorisme quàntic utilitzant mètodes clàssics.
+**Simulació clàssica**: Aquest codi simula un algorisme quàntic utilitzant mètodes clàssics.
 
 - La complexitat temporal és **exponencial** en la simulació
 - Un ordinador quàntic real seria **polinòmica**
@@ -194,22 +194,6 @@ L'algorisme de Shor és probabilístic:
 
 ---
 
-## Extensions Possibles
-
-### Millores Implementades
-- ✓ Visualització de funcions modulars
-- ✓ Anàlisi comparativa de mètodes
-- ✓ Tests exhaustius
-- ✓ Documentació completa
-
-### Millores Futures
-- [ ] Implementació amb circuits quàntics reals (IBM Quantum)
-- [ ] Optimització per a números més grans
-- [ ] Interfície gràfica interactiva
-- [ ] Comparació de rendiment amb altres algorismes
-
----
-
 ## Referències i Recursos
 
 ### Bibliografia
@@ -221,24 +205,6 @@ L'algorisme de Shor és probabilístic:
 - IBM Quantum Experience: https://quantum-computing.ibm.com/
 - Qiskit Textbook: https://qiskit.org/textbook/
 - Microsoft Quantum: https://azure.microsoft.com/en-us/products/quantum/
-
----
-
-## Contacte i Suport
-
-**Pràctica realitzada per:**  
-Assignatura de Seguretat d'Aplicacions i Comunicacions  
-Universitat de Lleida
-
-**Data:** Novembre 2025
-
----
-
-## Llicència
-
-Aquest codi s'ha desenvolupat amb finalitats educatives per a la pràctica de l'assignatura.
-
----
 
 ## Conclusió
 
